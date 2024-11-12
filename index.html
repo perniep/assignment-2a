@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+
+    let text = "";
+
+    for (let i = 1; i <= 10; i++) {
+      if (i % 2) {
+        if (i == 5) 
+          text += "Q";
+        else {
+          text += "O";
+        }
+      } else {
+          text += "X";
+      }
+    }  
+    console.log(text)
+    </script>
+    <br>
+    <script>
+
+      //tog hjälp av youtubevideon på denna uppgift men förstår vad som gjorts
+      for (let i = 0; i<20; i++){
+          let amountOfSpaces = Math.ceil(Math.random()*5)+1; //math.floor avrundar neråt på decimaler, math.ceil avrundar uppåt
+            document.write("&nbsp".repeat(amountOfSpaces) + ("O"));
+          }
+      
+      // &nbsp = non breaking space
+      
+    </script>
+    <br>
+    <script>
+let citynames = ["kiruna", "uppsala", "malmo", "gothenburg", "stockholm"];
+
+  for (let i = 0; i < citynames.length; i += 1) {
+    let city = citynames[i]
+
+        for (let i2 = 0; i2 < city.length; i2 += 1)
+          if(i2 == 0)
+          console.log(city[0].toUpperCase())
+          else
+            console.log(city[i2])
+        
+         
+      
+}
+
+
+    </script>
+</body>
+</html>
